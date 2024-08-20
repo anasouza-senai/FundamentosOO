@@ -2,6 +2,8 @@
 
 internal class Program
 {
+    public static object Magnus { get; private set; }
+
     private static void Main(string[] args)
     {
         /*
@@ -100,7 +102,7 @@ internal class Program
         Console.WriteLine("O animal " + animal1.Especie + " emitiu um som.");
         */
 
-
+        /*
         Gato gato = new Gato();
         gato.Nome = "Lilith";
         Console.WriteLine(gato.Nome + " faz:");
@@ -119,5 +121,28 @@ internal class Program
         galinha.Nome = "Lolita";
         Console.WriteLine(galinha.Nome + " faz:");
         galinha.emitirSom();
+        */
+
+        Mago magnus = new Mago();
+        magnus.Nome = "Mago Magnus";
+        magnus.Vida = 100;
+        magnus.Inteligencia = 87;
+        magnus.Forca = 55;
+        magnus.Agilidade = 55;
+        magnus.Nivel = 1;
+
+        Elfo Thranduil = new Elfo();
+        Thranduil.Nome = "Thranduil";
+        Thranduil.Vida = 100;
+        Thranduil.Inteligencia = 83;
+        Thranduil.Forca = 56;
+        Thranduil.Agilidade = 90;
+        Thranduil.Nivel = 1;
+
+
+        magnus.apresentarSe();
+        Thranduil.apresentarSe();
+
+
     }
 }
