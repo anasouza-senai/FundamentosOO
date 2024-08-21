@@ -143,6 +143,8 @@ internal class Program
         magnus.apresentarSe();
         Thranduil.apresentarSe();
 
+        magnus.batalhar(Thranduil);
+
 
     }
 }
